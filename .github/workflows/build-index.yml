@@ -1,0 +1,51 @@
+name: build-index
+
+# Regenerates index.json + AUDIT.md from iotc-index-catalog.xlsx.
+#  - Runs on every commit of the workbook (you edit -> commit -> site updates).
+#  - Runs weekly to refresh live GitHub facts (stars, last-updated) and re-audit,
+#    so the index stays current and gap reports stay honest even with no edits.
+#  - Writes ONLY index.json + AUDIT.md. Your index.html is untouched.
+
+on:
+  workflow_dispatch: {}
+  push:
+    paths:
+      - "iotc-index-catalog.xlsx"
+      - "build_site.py"
+      - ".github/workflows/build-index.yml"
+  schedule:
+    - cron: "0 7 * * 1"      # Mondays 07:00 UTC — keeps facts fresh + re-audits
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-index
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install openpyxl
+      - name: Build index + audit
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # enables uncatalogued-repo detection
+          ORG: avnet-iotconnect
+          OUT_DIR: .
+        run: python build_site.py
+      - name: Commit refreshed index + audit
+        run: |
+          git config user.name  "iotc-index-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add index.json AUDIT.md
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "chore: refresh index.json + AUDIT.md"
+            git push
+          fi
