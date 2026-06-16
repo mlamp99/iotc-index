@@ -1,9 +1,17 @@
 # /IOTCONNECT Index — Audit Report
 
-_Generated 2026-06-15T21:02:31Z_  ·  65 listings · 45 boards in use · 12 manufacturers
+_Generated 2026-06-16T03:06:24Z_  ·  72 listings · 50 boards in use · 11 manufacturers
 
 ## ⚠ Boards referenced but missing from the Boards sheet
-- none — every referenced board is defined.
+- **Amphenol Clicks** — referenced by: WFI-32 Sensor Clicks
+- **IOTC Bridge App** — referenced by: SensorTile.Box Pro with Bridge Mobile App, Telehealth
+- **J4021** — referenced by: Edge AI Inference Pipeline (Jetson Orin NX)
+- **Kerlink Gateway** — referenced by: LoRaWAN Sensor Monitoring
+- **Raspberry Pi 5** — referenced by: GGL Basic - Health, Serial
+- **SOM-6873 COM Express T6** — referenced by: Edge People Detection & Tracking with Ryzen 7 AI
+- **STM32MP157F-DK3** — referenced by: Nano Edge AI Anomaly Detection
+- **TE Clicks** — referenced by: WFI-32 Sensor Clicks
+- **WBZ350PE-I** — referenced by: Telehealth
 
 ## Boards with no image
 - none.
@@ -22,12 +30,14 @@ _Generated 2026-06-15T21:02:31Z_  ·  65 listings · 45 boards in use · 12 manu
 - Infineon · PSOC™ 62S3 Wi-Fi Bluetooth® prototyping kit (CY8CPROTO-062S3-4343W)
 - Infineon · PSOC™ Control C3M5 Evaluation Kit (KIT_PSC3M5_EVK)
 - Infineon · XENSIV™ KIT CSK BGT60TR13C (KIT_CSK_BGT60TR13C)
+- Microchip · PIC32CX-BZ3 and WBZ35x Curiosity Board (EV19J06A)
 - Microchip · PIC64GX Curiosity Kit (CURIOSITY-PIC64GX1000-KIT)
 - Microchip · SAM E54 Xplained Pro Evaluation Kit (ATSAME54-XPRO)
 - NXP · FRDM Development Board for MCX N94/N54 MCUs (FRDM-MCXN947)
 - NXP · GoldBox for Vehicle Networking Development Platform (S32G-VNP-GLDBOX)
 - Nordic · Thingy-91 (nRF6943)
 - Nordic · nRF52840 DK (nRF52840-DK)
+- Raspberry Pi · Raspberry Pi5 4GB (RPI5-4GB-SINGLE)
 - Renesas · Development Kit, DA 16200, 2.4GHz Wireless Communication (DA16600MOD-DEVKT)
 - Renesas · Fast Prototyping Board for RA0E2 MCU Group (FPB-RA0E2)
 - STMicroelectronics · STM32 Nucleo-144 development board with STM32H755ZI MCU (NUCLEO-H755ZI-Q)
@@ -106,4 +116,42 @@ _Generated 2026-06-15T21:02:31Z_  ·  65 listings · 45 boards in use · 12 manu
 - iotc-yocto-greengrass-sdk — no description
 
 ## Listings missing description or topics
-- none.
+- Agrisense with AVR_IOT
+- Astra Asset Tracker
+- Edge AI Inference Pipeline (Jetson Orin NX)
+- Edge AI Inference Pipeline (Jetson Orin NX)
+- Edge AI Object Detection - Fruit
+- Edge AI Solutions featuring Jetson
+- Edge People Detection & Tracking with Ryzen 7 AI
+- FPGA-Driven Industrial Gesture Recognition
+- GGL Basic - Health, Serial
+- GGL Basic - Health, Serial
+- GGL Basic - Health, Serial
+- GGL Basic - Health, Serial
+- GGL Basic - Health, Serial
+- GGL Components - AI Vision Demo / PROTEUS BLE / SensorTileBox Pro BLE
+- GGL Components - AI Vision Demo / PROTEUS BLE / SensorTileBox Pro BLE
+- GGL Components - AI Vision Demo / PROTEUS BLE / SensorTileBox Pro BLE
+- Hand-Gesture Robotics Control
+- Image Classification and Remote Training
+- ISP
+- LoRaWAN Sensor Monitoring
+- Machine Monitoring
+- Managing Edge AI:  RZBoard V2L
+- Multi Stream Video and AI
+- Nano Edge AI Anomaly Detection
+- Protected Hybrid Solar Inverter
+- QCS6490-Vision-AI-Demo
+- RA Cloud Ready Platforms
+- RASyn Puck
+- SensorTile.Box Pro with Bridge Mobile App
+- Sidewalk
+- Smart Asset Monitoring
+- Smart Tractor
+- SPARK Smart Parking Demo
+- STM32N6 Edge AI Demos
+- STM32N6 Edge AI Object Detection
+- STSAFE Authentification
+- Telehealth
+- Urban Sound Event Classifier
+- Vision AI Demonstrator

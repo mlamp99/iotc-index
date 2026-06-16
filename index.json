@@ -1,6 +1,6 @@
 {
   "org": "avnet-iotconnect",
-  "generated": "2026-06-15T21:02:31Z",
+  "generated": "2026-06-16T03:06:24Z",
   "imageBase": "https://saleshosted.z13.web.core.windows.net/images/boards/",
   "facets": {
     "manufacturers": [
@@ -8,7 +8,6 @@
       "Infineon",
       "Microchip",
       "NXP",
-      "Raspberry Pi",
       "Renesas",
       "STMicroelectronics",
       "Seeed Studio",
@@ -24,6 +23,11 @@
         "name": "AVR-IOT mini Cellular",
         "partNumber": "EV70N78A",
         "image": "https://saleshosted.z13.web.core.windows.net/images/boards/EV70N78A.png"
+      },
+      {
+        "slug": "x-amphenol-clicks",
+        "vendor": "Other",
+        "name": "Amphenol Clicks"
       },
       {
         "slug": "steval-astra1b",
@@ -110,18 +114,26 @@
         "image": "https://saleshosted.z13.web.core.windows.net/images/boards/FRDM-IMX93.png"
       },
       {
+        "slug": "x-iotc-bridge-app",
+        "vendor": "Other",
+        "name": "IOTC Bridge App"
+      },
+      {
+        "slug": "x-j4021",
+        "vendor": "Other",
+        "name": "J4021"
+      },
+      {
+        "slug": "x-kerlink-gateway",
+        "vendor": "Other",
+        "name": "Kerlink Gateway"
+      },
+      {
         "slug": "msc-sm2s-imx8plus",
         "vendor": "Tria / NXP",
         "name": "MSC SM2S-IMX8PLUS",
         "partNumber": "MSC SM2S-IMX8PLUS",
         "image": "https://saleshosted.z13.web.core.windows.net/images/boards/MSC SM2S-IMX8PLUS.png"
-      },
-      {
-        "slug": "ev19j06a",
-        "vendor": "Microchip",
-        "name": "PIC32CX-BZ3 and WBZ35x Curiosity Board",
-        "partNumber": "EV19J06A",
-        "image": "https://saleshosted.z13.web.core.windows.net/images/boards/EV19J06A.png"
       },
       {
         "slug": "cy8ckit-062s2-ai",
@@ -180,11 +192,9 @@
         "image": "https://saleshosted.z13.web.core.windows.net/images/boards/AES-RZB-V2L-SK-G.png"
       },
       {
-        "slug": "rpi5-4gb-single",
-        "vendor": "Raspberry Pi",
-        "name": "Raspberry Pi5 4GB",
-        "partNumber": "RPI5-4GB-SINGLE",
-        "image": "https://saleshosted.z13.web.core.windows.net/images/boards/RPI5.png"
+        "slug": "x-raspberry-pi-5",
+        "vendor": "Other",
+        "name": "Raspberry Pi 5"
       },
       {
         "slug": "atsama5d27-som1-ek1",
@@ -201,11 +211,9 @@
         "image": "https://saleshosted.z13.web.core.windows.net/images/boards/EV63J76A.png"
       },
       {
-        "slug": "som-6873-com-express-t6",
-        "vendor": "Advantech",
-        "name": "SOM-6873 COM Express Type 6 (Ryzen Embedded)",
-        "partNumber": "SOM-6873 COM Express T6",
-        "image": "https://saleshosted.z13.web.core.windows.net/images/boards/SOM-6873.png"
+        "slug": "x-som-6873-com-express-t6",
+        "vendor": "Other",
+        "name": "SOM-6873 COM Express T6"
       },
       {
         "slug": "stm32h573i-dk",
@@ -234,6 +242,11 @@
         "name": "STM32MP157 Discovery Kit",
         "partNumber": "STM32MP157F-DK2",
         "image": "https://saleshosted.z13.web.core.windows.net/images/boards/stm32mp157.png"
+      },
+      {
+        "slug": "x-stm32mp157f-dk3",
+        "vendor": "Other",
+        "name": "STM32MP157F-DK3"
       },
       {
         "slug": "stm32mp257f-dk",
@@ -278,11 +291,16 @@
         "image": "https://saleshosted.z13.web.core.windows.net/images/boards/STEVAL-MKBOXPRO.png"
       },
       {
+        "slug": "x-te-clicks",
+        "vendor": "Other",
+        "name": "TE Clicks"
+      },
+      {
         "slug": "vision-ai-kit-iq9",
         "vendor": "Tria / Qualcom",
         "name": "Vision AI-KIT IQ9",
         "partNumber": "Vision AI-KIT IQ9",
-        "image": "https://saleshosted.z13.web.core.windows.net/images/boards/Vision%20AI-KIT-IQ9.png"
+        "image": "https://saleshosted.z13.web.core.windows.net/images/boards/Vision-AI-KIT-IQ9.png"
       },
       {
         "slug": "aes-qcs6490-dk-g",
@@ -290,6 +308,11 @@
         "name": "VisionAI-Kit 6490",
         "partNumber": "AES-QCS6490-DK-G",
         "image": "https://saleshosted.z13.web.core.windows.net/images/boards/AES-QCS6490-DK-G.png"
+      },
+      {
+        "slug": "x-wbz350pe-i",
+        "vendor": "Other",
+        "name": "WBZ350PE-I"
       },
       {
         "slug": "ev36w50a",
@@ -325,22 +348,15 @@
         "name": "reComputer J2021 - Edge AI Computer with NVIDIA\u00ae Jetson Xavier\u2122 NX 8GB",
         "partNumber": "SEEED-j2021",
         "image": "https://saleshosted.z13.web.core.windows.net/images/boards/SEEED-j2021.png"
-      },
-      {
-        "slug": "j4021",
-        "vendor": "Seeed Studio",
-        "name": "reComputer J4021 \u2014 Jetson Orin NX",
-        "partNumber": "J4021",
-        "image": "https://saleshosted.z13.web.core.windows.net/images/boards/J4021.png"
       }
     ]
   },
   "counts": {
-    "total": 65,
-    "manufacturers": 12,
-    "boards": 45,
+    "total": 72,
+    "manufacturers": 11,
+    "boards": 50,
     "sdks": 6,
-    "examples": 59
+    "examples": 66
   },
   "repos": [
     {
@@ -626,11 +642,7 @@
       "category": "sample",
       "status": "beta",
       "languages": [],
-      "features": [
-        "agriculture",
-        "sensors",
-        "cellular"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2026-06-01T00:00:00Z",
       "hidden": false,
@@ -665,10 +677,7 @@
       "languages": [
         "C"
       ],
-      "features": [
-        "asset-tracking",
-        "lora"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2025-05-09T17:10:06Z",
       "hidden": false,
@@ -759,33 +768,25 @@
       "category": "sample",
       "status": "beta",
       "languages": [],
-      "features": [
-        "ai",
-        "vision",
-        "edge-ai"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2026-06-01T00:00:00Z",
       "hidden": false,
-      "id": "edge-ai-inference-pipeline-jetson-orin-nx::j4021",
+      "id": "edge-ai-inference-pipeline-jetson-orin-nx::x-j4021",
       "boards": [
         {
-          "slug": "j4021",
-          "vendor": "Seeed Studio",
-          "name": "reComputer J4021 \u2014 Jetson Orin NX",
-          "partNumber": "J4021",
-          "image": "https://saleshosted.z13.web.core.windows.net/images/boards/J4021.png"
+          "slug": "x-j4021",
+          "vendor": "Other",
+          "name": "J4021"
         }
       ],
       "board": {
-        "slug": "j4021",
-        "vendor": "Seeed Studio",
-        "name": "reComputer J4021 \u2014 Jetson Orin NX",
-        "partNumber": "J4021",
-        "image": "https://saleshosted.z13.web.core.windows.net/images/boards/J4021.png"
+        "slug": "x-j4021",
+        "vendor": "Other",
+        "name": "J4021"
       },
       "manufacturers": [
-        "Seeed Studio"
+        "Other"
       ]
     },
     {
@@ -796,11 +797,7 @@
       "category": "sample",
       "status": "beta",
       "languages": [],
-      "features": [
-        "ai",
-        "vision",
-        "edge-ai"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2026-06-01T00:00:00Z",
       "hidden": false,
@@ -833,11 +830,7 @@
       "category": "sample",
       "status": "beta",
       "languages": [],
-      "features": [
-        "ai",
-        "vision",
-        "edge-ai"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2026-06-01T00:00:00Z",
       "hidden": false,
@@ -872,11 +865,7 @@
       "languages": [
         "Python"
       ],
-      "features": [
-        "ai",
-        "vision",
-        "agriculture"
-      ],
+      "features": [],
       "stars": 4,
       "updated": "2026-05-09T14:16:15Z",
       "hidden": false,
@@ -909,11 +898,7 @@
       "category": "sample",
       "status": "beta",
       "languages": [],
-      "features": [
-        "ai",
-        "vision",
-        "edge-ai"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2026-06-01T00:00:00Z",
       "hidden": false,
@@ -930,33 +915,25 @@
       "category": "sample",
       "status": "beta",
       "languages": [],
-      "features": [
-        "ai",
-        "vision",
-        "edge-ai"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2026-06-01T00:00:00Z",
       "hidden": false,
       "id": "edge-people-detection-tracking-with-ryzen-7-ai",
       "boards": [
         {
-          "slug": "som-6873-com-express-t6",
-          "vendor": "Advantech",
-          "name": "SOM-6873 COM Express Type 6 (Ryzen Embedded)",
-          "partNumber": "SOM-6873 COM Express T6",
-          "image": "https://saleshosted.z13.web.core.windows.net/images/boards/SOM-6873.png"
+          "slug": "x-som-6873-com-express-t6",
+          "vendor": "Other",
+          "name": "SOM-6873 COM Express T6"
         }
       ],
       "board": {
-        "slug": "som-6873-com-express-t6",
-        "vendor": "Advantech",
-        "name": "SOM-6873 COM Express Type 6 (Ryzen Embedded)",
-        "partNumber": "SOM-6873 COM Express T6",
-        "image": "https://saleshosted.z13.web.core.windows.net/images/boards/SOM-6873.png"
+        "slug": "x-som-6873-com-express-t6",
+        "vendor": "Other",
+        "name": "SOM-6873 COM Express T6"
       },
       "manufacturers": [
-        "Advantech"
+        "Other"
       ]
     },
     {
@@ -1039,11 +1016,7 @@
       "category": "sample",
       "status": "beta",
       "languages": [],
-      "features": [
-        "ai",
-        "gesture",
-        "industrial"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2026-06-01T00:00:00Z",
       "hidden": false,
@@ -1078,11 +1051,7 @@
       "languages": [
         "Python"
       ],
-      "features": [
-        "greengrass",
-        "gateway",
-        "healthcare"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2026-04-09T21:44:36Z",
       "hidden": false,
@@ -1117,11 +1086,7 @@
       "languages": [
         "Python"
       ],
-      "features": [
-        "greengrass",
-        "gateway",
-        "healthcare"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2026-04-09T21:44:36Z",
       "hidden": false,
@@ -1156,11 +1121,7 @@
       "languages": [
         "Python"
       ],
-      "features": [
-        "greengrass",
-        "gateway",
-        "healthcare"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2026-04-09T21:44:36Z",
       "hidden": false,
@@ -1195,11 +1156,7 @@
       "languages": [
         "Python"
       ],
-      "features": [
-        "greengrass",
-        "gateway",
-        "healthcare"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2026-04-09T21:44:36Z",
       "hidden": false,
@@ -1234,33 +1191,25 @@
       "languages": [
         "Python"
       ],
-      "features": [
-        "greengrass",
-        "gateway",
-        "healthcare"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2026-04-09T21:44:36Z",
       "hidden": false,
       "id": "ggl-basic-health-serial",
       "boards": [
         {
-          "slug": "rpi5-4gb-single",
-          "vendor": "Raspberry Pi",
-          "name": "Raspberry Pi5 4GB",
-          "partNumber": "RPI5-4GB-SINGLE",
-          "image": "https://saleshosted.z13.web.core.windows.net/images/boards/RPI5.png"
+          "slug": "x-raspberry-pi-5",
+          "vendor": "Other",
+          "name": "Raspberry Pi 5"
         }
       ],
       "board": {
-        "slug": "rpi5-4gb-single",
-        "vendor": "Raspberry Pi",
-        "name": "Raspberry Pi5 4GB",
-        "partNumber": "RPI5-4GB-SINGLE",
-        "image": "https://saleshosted.z13.web.core.windows.net/images/boards/RPI5.png"
+        "slug": "x-raspberry-pi-5",
+        "vendor": "Other",
+        "name": "Raspberry Pi 5"
       },
       "manufacturers": [
-        "Raspberry Pi"
+        "Other"
       ]
     },
     {
@@ -1271,12 +1220,7 @@
       "category": "sample",
       "status": "beta",
       "languages": [],
-      "features": [
-        "greengrass",
-        "ai",
-        "vision",
-        "ble"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2026-03-11T08:56:53Z",
       "hidden": false,
@@ -1309,12 +1253,7 @@
       "category": "sample",
       "status": "beta",
       "languages": [],
-      "features": [
-        "greengrass",
-        "ai",
-        "vision",
-        "ble"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2026-03-11T08:56:53Z",
       "hidden": false,
@@ -1347,12 +1286,7 @@
       "category": "sample",
       "status": "beta",
       "languages": [],
-      "features": [
-        "greengrass",
-        "ai",
-        "vision",
-        "ble"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2026-03-11T08:56:53Z",
       "hidden": false,
@@ -1385,11 +1319,7 @@
       "category": "sample",
       "status": "beta",
       "languages": [],
-      "features": [
-        "robotics",
-        "ai",
-        "gesture"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2026-06-01T00:00:00Z",
       "hidden": false,
@@ -1424,10 +1354,7 @@
       "languages": [
         "Python"
       ],
-      "features": [
-        "ai",
-        "vision"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2026-03-30T19:21:15Z",
       "hidden": false,
@@ -1462,10 +1389,7 @@
       "languages": [
         "Python"
       ],
-      "features": [
-        "vision",
-        "camera"
-      ],
+      "features": [],
       "stars": 1,
       "updated": "2025-06-19T01:47:52Z",
       "hidden": false,
@@ -1500,10 +1424,7 @@
       "languages": [
         "C"
       ],
-      "features": [
-        "lora",
-        "sensors"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2025-05-09T17:10:06Z",
       "hidden": false,
@@ -1538,10 +1459,7 @@
       "languages": [
         "C"
       ],
-      "features": [
-        "lora",
-        "sensors"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2025-05-09T17:10:06Z",
       "hidden": false,
@@ -1576,10 +1494,7 @@
       "languages": [
         "C"
       ],
-      "features": [
-        "lora",
-        "sensors"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2025-05-09T17:10:06Z",
       "hidden": false,
@@ -1605,6 +1520,37 @@
       ]
     },
     {
+      "repo": "iotc-lora-demos",
+      "url": "https://github.com/avnet-iotconnect/iotc-lora-demos",
+      "displayName": "LoRaWAN Sensor Monitoring",
+      "description": "Guide for onboarding LoRaWAN devices to IOTCONNECT. It walks through creating templates and configuring device attributes such as temperature, pressure, humidity and accelerometer for ST ASTRA1B and NUCLEO-WL55JC boards, creating LoRaWAN devices in the portal and sending telemetry and commands.",
+      "category": "sample",
+      "status": "beta",
+      "languages": [
+        "C"
+      ],
+      "features": [],
+      "stars": 0,
+      "updated": "2025-05-09T17:10:06Z",
+      "hidden": false,
+      "id": "lorawan-sensor-monitoring::x-kerlink-gateway",
+      "boards": [
+        {
+          "slug": "x-kerlink-gateway",
+          "vendor": "Other",
+          "name": "Kerlink Gateway"
+        }
+      ],
+      "board": {
+        "slug": "x-kerlink-gateway",
+        "vendor": "Other",
+        "name": "Kerlink Gateway"
+      },
+      "manufacturers": [
+        "Other"
+      ]
+    },
+    {
       "repo": "iotc-freertos-ck-ra6m5-v2-pmod",
       "url": "https://github.com/avnet-iotconnect/iotc-freertos-ck-ra6m5-v2-pmod/blob/master/QUICKSTART.md",
       "displayName": "Machine Monitoring",
@@ -1614,10 +1560,7 @@
       "languages": [
         "C"
       ],
-      "features": [
-        "industrial",
-        "predictive-maintenance"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2026-06-10T23:42:28Z",
       "hidden": false,
@@ -1652,11 +1595,7 @@
       "languages": [
         "Python"
       ],
-      "features": [
-        "ai",
-        "vision",
-        "edge-ai"
-      ],
+      "features": [],
       "stars": 4,
       "updated": "2026-05-09T14:16:15Z",
       "hidden": false,
@@ -1689,11 +1628,7 @@
       "category": "sample",
       "status": "beta",
       "languages": [],
-      "features": [
-        "ai",
-        "vision",
-        "video"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2026-06-01T00:00:00Z",
       "hidden": false,
@@ -1704,7 +1639,7 @@
           "vendor": "Tria / Qualcom",
           "name": "Vision AI-KIT IQ9",
           "partNumber": "Vision AI-KIT IQ9",
-          "image": "https://saleshosted.z13.web.core.windows.net/images/boards/Vision%20AI-KIT-IQ9.png"
+          "image": "https://saleshosted.z13.web.core.windows.net/images/boards/Vision-AI-KIT-IQ9.png"
         }
       ],
       "board": {
@@ -1712,7 +1647,7 @@
         "vendor": "Tria / Qualcom",
         "name": "Vision AI-KIT IQ9",
         "partNumber": "Vision AI-KIT IQ9",
-        "image": "https://saleshosted.z13.web.core.windows.net/images/boards/Vision%20AI-KIT-IQ9.png"
+        "image": "https://saleshosted.z13.web.core.windows.net/images/boards/Vision-AI-KIT-IQ9.png"
       },
       "manufacturers": [
         "Tria / Qualcom"
@@ -1728,11 +1663,7 @@
       "languages": [
         "Python"
       ],
-      "features": [
-        "ai",
-        "predictive-maintenance",
-        "sensors"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2024-10-24T18:53:34Z",
       "hidden": false,
@@ -1767,33 +1698,25 @@
       "languages": [
         "Python"
       ],
-      "features": [
-        "ai",
-        "predictive-maintenance",
-        "sensors"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2024-10-24T18:53:34Z",
       "hidden": false,
-      "id": "nano-edge-ai-anomaly-detection::stm32mp157f-dk2",
+      "id": "nano-edge-ai-anomaly-detection::x-stm32mp157f-dk3",
       "boards": [
         {
-          "slug": "stm32mp157f-dk2",
-          "vendor": "STMicroelectronics",
-          "name": "STM32MP157 Discovery Kit",
-          "partNumber": "STM32MP157F-DK2",
-          "image": "https://saleshosted.z13.web.core.windows.net/images/boards/stm32mp157.png"
+          "slug": "x-stm32mp157f-dk3",
+          "vendor": "Other",
+          "name": "STM32MP157F-DK3"
         }
       ],
       "board": {
-        "slug": "stm32mp157f-dk2",
-        "vendor": "STMicroelectronics",
-        "name": "STM32MP157 Discovery Kit",
-        "partNumber": "STM32MP157F-DK2",
-        "image": "https://saleshosted.z13.web.core.windows.net/images/boards/stm32mp157.png"
+        "slug": "x-stm32mp157f-dk3",
+        "vendor": "Other",
+        "name": "STM32MP157F-DK3"
       },
       "manufacturers": [
-        "STMicroelectronics"
+        "Other"
       ]
     },
     {
@@ -1806,10 +1729,7 @@
       "languages": [
         "C"
       ],
-      "features": [
-        "energy",
-        "security"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2024-05-08T13:50:36Z",
       "hidden": false,
@@ -2076,11 +1996,7 @@
       "category": "sample",
       "status": "beta",
       "languages": [],
-      "features": [
-        "ai",
-        "vision",
-        "edge-ai"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2026-06-01T00:00:00Z",
       "hidden": false,
@@ -2115,10 +2031,7 @@
       "languages": [
         "C"
       ],
-      "features": [
-        "connectivity",
-        "wifi"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2025-02-04T22:24:29Z",
       "hidden": false,
@@ -2153,10 +2066,7 @@
       "languages": [
         "C"
       ],
-      "features": [
-        "connectivity",
-        "wifi"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2025-02-04T22:24:29Z",
       "hidden": false,
@@ -2189,11 +2099,7 @@
       "category": "sample",
       "status": "beta",
       "languages": [],
-      "features": [
-        "ai",
-        "audio",
-        "edge-ai"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2026-06-01T00:00:00Z",
       "hidden": false,
@@ -2226,15 +2132,11 @@
       "category": "sample",
       "status": "beta",
       "languages": [],
-      "features": [
-        "sensors",
-        "ble",
-        "mobile"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2024-05-29T16:39:00Z",
       "hidden": false,
-      "id": "sensortile-box-pro-with-bridge-mobile-app",
+      "id": "sensortile-box-pro-with-bridge-mobile-app::steval-mkboxpro",
       "boards": [
         {
           "slug": "steval-mkboxpro",
@@ -2256,6 +2158,35 @@
       ]
     },
     {
+      "repo": "iotc-gateway-mobile-app",
+      "url": "https://github.com/avnet-iotconnect/iotc-gateway-mobile-app",
+      "displayName": "SensorTile.Box Pro with Bridge Mobile App",
+      "description": "Mobile phone/tablet application that acts as a Bluetooth gateway for IOTCONNECT. The app connects to edge devices such as the ST SensorTile.box Pro, captures telemetry via BLE and forwards it to IOTCONNECT. It guides users through account setup, device onboarding and viewing live dashboards on the platform.",
+      "category": "sample",
+      "status": "beta",
+      "languages": [],
+      "features": [],
+      "stars": 0,
+      "updated": "2024-05-29T16:39:00Z",
+      "hidden": false,
+      "id": "sensortile-box-pro-with-bridge-mobile-app::x-iotc-bridge-app",
+      "boards": [
+        {
+          "slug": "x-iotc-bridge-app",
+          "vendor": "Other",
+          "name": "IOTC Bridge App"
+        }
+      ],
+      "board": {
+        "slug": "x-iotc-bridge-app",
+        "vendor": "Other",
+        "name": "IOTC Bridge App"
+      },
+      "manufacturers": [
+        "Other"
+      ]
+    },
+    {
       "repo": null,
       "url": null,
       "displayName": "Sidewalk",
@@ -2263,10 +2194,7 @@
       "category": "sample",
       "status": "beta",
       "languages": [],
-      "features": [
-        "amazon-sidewalk",
-        "connectivity"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2026-06-01T00:00:00Z",
       "hidden": false,
@@ -2299,10 +2227,7 @@
       "category": "sample",
       "status": "beta",
       "languages": [],
-      "features": [
-        "asset-tracking",
-        "sensors"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2026-06-01T00:00:00Z",
       "hidden": false,
@@ -2335,10 +2260,7 @@
       "category": "sample",
       "status": "beta",
       "languages": [],
-      "features": [
-        "asset-tracking",
-        "sensors"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2026-06-01T00:00:00Z",
       "hidden": false,
@@ -2409,10 +2331,7 @@
       "category": "sample",
       "status": "beta",
       "languages": [],
-      "features": [
-        "agriculture",
-        "ai"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2026-06-01T00:00:00Z",
       "hidden": false,
@@ -2445,15 +2364,44 @@
       "category": "sample",
       "status": "beta",
       "languages": [],
-      "features": [
-        "smart-city",
-        "vision",
-        "parking"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2026-06-01T00:00:00Z",
       "hidden": false,
-      "id": "spark-smart-parking-demo",
+      "id": "spark-smart-parking-demo::aes-rzb-v2l-sk-g",
+      "boards": [
+        {
+          "slug": "aes-rzb-v2l-sk-g",
+          "vendor": "Tria / Renesas",
+          "name": "RZBoard V2L",
+          "partNumber": "AES-RZB-V2L-SK-G",
+          "image": "https://saleshosted.z13.web.core.windows.net/images/boards/AES-RZB-V2L-SK-G.png"
+        }
+      ],
+      "board": {
+        "slug": "aes-rzb-v2l-sk-g",
+        "vendor": "Tria / Renesas",
+        "name": "RZBoard V2L",
+        "partNumber": "AES-RZB-V2L-SK-G",
+        "image": "https://saleshosted.z13.web.core.windows.net/images/boards/AES-RZB-V2L-SK-G.png"
+      },
+      "manufacturers": [
+        "Tria / Renesas"
+      ]
+    },
+    {
+      "repo": "SPARK",
+      "url": "https://github.com/Avnet/SPARK",
+      "displayName": "SPARK Smart Parking Demo",
+      "description": "SPARK is a smart parking and EV charging demo running on the Renesas RZBoard V2L. It uses a convolutional neural network to detect vehicle occupancy in real\u2011time, scales to hundreds of parking spots and can stream analytics data to IOTCONNECT or display it locally via HDMI.",
+      "category": "sample",
+      "status": "beta",
+      "languages": [],
+      "features": [],
+      "stars": 0,
+      "updated": "2026-06-01T00:00:00Z",
+      "hidden": false,
+      "id": "spark-smart-parking-demo::aes-rzb-v2l-sk-g",
       "boards": [
         {
           "slug": "aes-rzb-v2l-sk-g",
@@ -2484,11 +2432,7 @@
       "languages": [
         "C"
       ],
-      "features": [
-        "ai",
-        "vision",
-        "edge-ai"
-      ],
+      "features": [],
       "stars": 9,
       "updated": "2026-05-11T22:52:02Z",
       "hidden": false,
@@ -2523,11 +2467,7 @@
       "languages": [
         "C"
       ],
-      "features": [
-        "ai",
-        "vision",
-        "edge-ai"
-      ],
+      "features": [],
       "stars": 9,
       "updated": "2026-05-11T22:52:02Z",
       "hidden": false,
@@ -2562,11 +2502,7 @@
       "languages": [
         "C"
       ],
-      "features": [
-        "ai",
-        "vision",
-        "edge-ai"
-      ],
+      "features": [],
       "stars": 9,
       "updated": "2026-05-11T22:52:02Z",
       "hidden": false,
@@ -2599,9 +2535,7 @@
       "category": "sample",
       "status": "beta",
       "languages": [],
-      "features": [
-        "security"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2026-06-01T00:00:00Z",
       "hidden": false,
@@ -2634,33 +2568,54 @@
       "category": "sample",
       "status": "beta",
       "languages": [],
-      "features": [
-        "healthcare",
-        "ble",
-        "mobile"
-      ],
+      "features": [],
       "stars": 0,
       "updated": "2024-05-29T16:39:00Z",
       "hidden": false,
-      "id": "telehealth",
+      "id": "telehealth::x-wbz350pe-i",
       "boards": [
         {
-          "slug": "ev19j06a",
-          "vendor": "Microchip",
-          "name": "PIC32CX-BZ3 and WBZ35x Curiosity Board",
-          "partNumber": "EV19J06A",
-          "image": "https://saleshosted.z13.web.core.windows.net/images/boards/EV19J06A.png"
+          "slug": "x-wbz350pe-i",
+          "vendor": "Other",
+          "name": "WBZ350PE-I"
         }
       ],
       "board": {
-        "slug": "ev19j06a",
-        "vendor": "Microchip",
-        "name": "PIC32CX-BZ3 and WBZ35x Curiosity Board",
-        "partNumber": "EV19J06A",
-        "image": "https://saleshosted.z13.web.core.windows.net/images/boards/EV19J06A.png"
+        "slug": "x-wbz350pe-i",
+        "vendor": "Other",
+        "name": "WBZ350PE-I"
       },
       "manufacturers": [
-        "Microchip"
+        "Other"
+      ]
+    },
+    {
+      "repo": "iotc-gateway-mobile-app",
+      "url": "https://github.com/avnet-iotconnect/iotc-gateway-mobile-app",
+      "displayName": "Telehealth",
+      "description": "Mobile phone/tablet application that acts as a Bluetooth gateway for IOTCONNECT. The app connects to edge devices such as the ST SensorTile.box Pro, captures telemetry via BLE and forwards it to IOTCONNECT. It guides users through account setup, device onboarding and viewing live dashboards on the platform.",
+      "category": "sample",
+      "status": "beta",
+      "languages": [],
+      "features": [],
+      "stars": 0,
+      "updated": "2024-05-29T16:39:00Z",
+      "hidden": false,
+      "id": "telehealth::x-iotc-bridge-app",
+      "boards": [
+        {
+          "slug": "x-iotc-bridge-app",
+          "vendor": "Other",
+          "name": "IOTC Bridge App"
+        }
+      ],
+      "board": {
+        "slug": "x-iotc-bridge-app",
+        "vendor": "Other",
+        "name": "IOTC Bridge App"
+      },
+      "manufacturers": [
+        "Other"
       ]
     },
     {
@@ -2673,15 +2628,46 @@
       "languages": [
         "C"
       ],
-      "features": [
-        "ai",
-        "audio",
-        "edge-ai"
-      ],
+      "features": [],
       "stars": 1,
       "updated": "2025-03-05T12:53:54Z",
       "hidden": false,
-      "id": "urban-sound-event-classifier",
+      "id": "urban-sound-event-classifier::b-u585i-iot02a",
+      "boards": [
+        {
+          "slug": "b-u585i-iot02a",
+          "vendor": "STMicroelectronics",
+          "name": "STM32U5 Discovery Kit",
+          "partNumber": "B-U585I-IOT02A",
+          "image": "https://saleshosted.z13.web.core.windows.net/images/boards/B-U585I-IOT02A.png"
+        }
+      ],
+      "board": {
+        "slug": "b-u585i-iot02a",
+        "vendor": "STMicroelectronics",
+        "name": "STM32U5 Discovery Kit",
+        "partNumber": "B-U585I-IOT02A",
+        "image": "https://saleshosted.z13.web.core.windows.net/images/boards/B-U585I-IOT02A.png"
+      },
+      "manufacturers": [
+        "STMicroelectronics"
+      ]
+    },
+    {
+      "repo": "iotc-freertos-stm32-u5-ml-demo",
+      "url": "https://github.com/avnet-iotconnect/iotc-freertos-stm32-u5-ml-demo",
+      "displayName": "Urban Sound Event Classifier",
+      "description": "Smart\u2011city noise detection demo for the STM32U5 MCU. The system uses machine\u2011learning to classify sounds such as alarms, dog barks, speech and car horns and runs inference locally on the microcontroller. Recognised events and confidence scores are sent to IOTCONNECT for visualisation.",
+      "category": "sample",
+      "status": "beta",
+      "languages": [
+        "C"
+      ],
+      "features": [],
+      "stars": 1,
+      "updated": "2025-03-05T12:53:54Z",
+      "hidden": false,
+      "id": "urban-sound-event-classifier::b-u585i-iot02a",
       "boards": [
         {
           "slug": "b-u585i-iot02a",
@@ -2712,11 +2698,7 @@
       "languages": [
         "Python"
       ],
-      "features": [
-        "ai",
-        "vision",
-        "edge-ai"
-      ],
+      "features": [],
       "stars": 4,
       "updated": "2026-05-09T14:16:15Z",
       "hidden": false,
@@ -2760,7 +2742,7 @@
       "stars": 7,
       "updated": "2025-05-07T19:12:26Z",
       "hidden": false,
-      "id": "wfi-32-sensor-clicks",
+      "id": "wfi-32-sensor-clicks::ev36w50a",
       "boards": [
         {
           "slug": "ev36w50a",
@@ -2779,6 +2761,78 @@
       },
       "manufacturers": [
         "Microchip"
+      ]
+    },
+    {
+      "repo": "iotc-azurertos-sdk",
+      "url": "https://github.com/avnet-iotconnect/iotc-azurertos-sdk/tree/main/samples/wfi32iot",
+      "displayName": "WFI-32 Sensor Clicks",
+      "description": "This example connects the WFI32-IoT Development Board to Avnet's IOTCONNECT platform built on Microsoft Azure and uses Azure RTOS to simplify cloud firmware development.  The WFI32 board features integrated sensors and supports mikroBUS\u2122 expansion for additional click\u2011board sensors.",
+      "category": "sample",
+      "status": "beta",
+      "languages": [
+        "C"
+      ],
+      "features": [
+        "clicks",
+        "wifi",
+        "sensors",
+        "hvac"
+      ],
+      "stars": 7,
+      "updated": "2025-05-07T19:12:26Z",
+      "hidden": false,
+      "id": "wfi-32-sensor-clicks::x-te-clicks",
+      "boards": [
+        {
+          "slug": "x-te-clicks",
+          "vendor": "Other",
+          "name": "TE Clicks"
+        }
+      ],
+      "board": {
+        "slug": "x-te-clicks",
+        "vendor": "Other",
+        "name": "TE Clicks"
+      },
+      "manufacturers": [
+        "Other"
+      ]
+    },
+    {
+      "repo": "iotc-azurertos-sdk",
+      "url": "https://github.com/avnet-iotconnect/iotc-azurertos-sdk/tree/main/samples/wfi32iot",
+      "displayName": "WFI-32 Sensor Clicks",
+      "description": "This example connects the WFI32-IoT Development Board to Avnet's IOTCONNECT platform built on Microsoft Azure and uses Azure RTOS to simplify cloud firmware development.  The WFI32 board features integrated sensors and supports mikroBUS\u2122 expansion for additional click\u2011board sensors.",
+      "category": "sample",
+      "status": "beta",
+      "languages": [
+        "C"
+      ],
+      "features": [
+        "clicks",
+        "wifi",
+        "sensors",
+        "hvac"
+      ],
+      "stars": 7,
+      "updated": "2025-05-07T19:12:26Z",
+      "hidden": false,
+      "id": "wfi-32-sensor-clicks::x-amphenol-clicks",
+      "boards": [
+        {
+          "slug": "x-amphenol-clicks",
+          "vendor": "Other",
+          "name": "Amphenol Clicks"
+        }
+      ],
+      "board": {
+        "slug": "x-amphenol-clicks",
+        "vendor": "Other",
+        "name": "Amphenol Clicks"
+      },
+      "manufacturers": [
+        "Other"
       ]
     },
     {
