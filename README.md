@@ -5,12 +5,12 @@ ecosystem â€” **pre-enabled development boards, SDKs, and ready-to-run demos** â
 by partner, board, topic and language, with per-board QuickStart guides, demos, videos
 and buy links.
 
-- **Live (staging):** https://mlamp99.github.io/iotc-index/
-- **Destination:** to be moved into the [`avnet-iotconnect`](https://github.com/avnet-iotconnect) org
+- **Live:** https://avnet-iotconnect.github.io/iotc-index/
+- **Staging mirror:** https://mlamp99.github.io/iotc-index/
 - **Hosting:** GitHub Pages, served straight from `main`
 
-The entire site is generated from **one spreadsheet**. You edit the spreadsheet,
-commit it, and a GitHub Action rebuilds the data the page renders.
+The entire site is generated from a few **CSV files**. You edit the CSVs,
+commit them, and a GitHub Action rebuilds the data the page renders.
 
 ---
 

@@ -4,4 +4,4 @@ IMAGE_BASE,https://saleshosted.z13.web.core.windows.net/images/boards/
 IMAGE_LOCAL_BASE,assets/boards/
 BRAND_BASE,assets/brand/
 DEFAULT_STATUS,beta
-PAGES_URL,https://mlamp99.github.io/iotc-index/
+PAGES_URL,https://avnet-iotconnect.github.io/iotc-index/
