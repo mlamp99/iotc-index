@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
 """
-build_site.py — reads iotc-index-catalog.xlsx and produces:
+build_site.py — reads the data/*.csv catalog and produces:
   - index.json   (what the page renders)
   - AUDIT.md     (gap report: missing boards, orphan boards, image gaps,
                   uncatalogued org repos, incomplete listings)
 
-Source workbook sheets: Listings, Boards, Resources, Config (+ Instructions).
+Source: data/listings.csv, data/boards.csv, data/resources.csv, data/config.csv
+(each is one editable, git-diffable sheet — see data/README.md).
 
 Run locally:           python build_site.py
 In CI with live facts:  GITHUB_TOKEN=xxx python build_site.py
 """
-import os, re, json, sys, urllib.request, datetime
-from openpyxl import load_workbook
+import os, re, csv, json, sys, urllib.request, datetime
 
-XLSX  = os.environ.get("CATALOG_XLSX", "iotc-index-catalog.xlsx")
+DATA  = os.environ.get("CATALOG_DIR", "data")
 OUT   = os.environ.get("OUT_DIR", ".")
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
 
@@ -27,8 +27,18 @@ TOPIC_NORM = {
 def slug(s): return re.sub(r'[^a-z0-9]+', '-', str(s).lower()).strip('-') or "x"
 def split(s): return [x.strip() for x in str(s or "").replace(";", ",").split(",") if x.strip()]
 
-wb = load_workbook(XLSX, data_only=True)
-cfg = {r[0]: r[1] for r in wb["Config"].iter_rows(min_row=2, values_only=True) if r and r[0]}
+def read_csv(name):
+    """Read data/<name>.csv -> (list of row-dicts, header list). Missing file -> ([], [])."""
+    path = os.path.join(DATA, f"{name}.csv")
+    if not os.path.exists(path):
+        return [], []
+    with open(path, newline="", encoding="utf-8-sig") as f:
+        rd = csv.DictReader(f)
+        hdr = rd.fieldnames or []
+        rows = [r for r in rd if any((v or "").strip() for v in r.values())]
+    return rows, hdr
+
+cfg = {r["Key"]: r["Value"] for r in read_csv("config")[0] if r.get("Key")}
 ORG            = os.environ.get("ORG", cfg.get("ORG", "avnet-iotconnect"))
 IMAGE_BASE     = cfg.get("IMAGE_BASE", "")
 IMAGE_LOCAL    = cfg.get("IMAGE_LOCAL_BASE", "assets/boards/")
@@ -47,18 +57,8 @@ PARTNER_LOGO = {
     "STMicroelectronics": "st-logo.png", "Infineon": "infineon-logo.png",
     "Microchip": "microchip-logo.png", "NXP": "nxp-logo.png", "Renesas": "renesas-logo.png",
 }
-# Accent colors per vendor family (consumed by the front end too, kept in sync there).
-def sheet_dicts(name):
-    ws = wb[name]
-    hdr = [c.value for c in ws[1]]
-    out = []
-    for row in ws.iter_rows(min_row=2, values_only=True):
-        if not any(c is not None and str(c).strip() for c in row): continue
-        out.append({hdr[i]: (row[i] if i < len(row) else None) for i in range(len(hdr))})
-    return out, hdr
-
 # ---------- Resources ----------
-res_rows, _ = sheet_dicts("Resources") if "Resources" in wb.sheetnames else ([], [])
+res_rows, _ = read_csv("resources")
 res_by_board = {}     # pn(lower) -> [ {kind,title,url} ]
 res_by_mfr   = {}     # manufacturer -> [ {kind,title,url} ]
 for r in res_rows:
@@ -73,7 +73,7 @@ for r in res_rows:
         res_by_board.setdefault(ref.lower(), []).append(item)
 
 # ---------- Boards ----------
-brows, _ = sheet_dicts("Boards")
+brows, _ = read_csv("boards")
 board_defs = {}; boards_by_pn = {}; boards_by_name = {}
 for row in brows:
     if str(row.get("Include") or "yes").lower() == "no": continue
@@ -101,7 +101,7 @@ for row in brows:
     if nm: boards_by_name[nm.lower()] = sg
 
 # ---------- Listings ----------
-lrows, _ = sheet_dicts("Listings")
+lrows, _ = read_csv("listings")
 missing_boards = {}
 def resolve_ref(ref, listing_name):
     k = ref.lower()

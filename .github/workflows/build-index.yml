@@ -1,7 +1,7 @@
 name: build-index
 
-# Regenerates index.json + AUDIT.md from iotc-index-catalog.xlsx.
-#  - Runs on every commit of the workbook (you edit -> commit -> site updates).
+# Regenerates index.json + AUDIT.md from the data/*.csv catalog.
+#  - Runs on every commit of the data (you edit a CSV -> commit -> site updates).
 #  - Runs weekly to refresh live GitHub facts (stars, last-updated) and re-audit,
 #    so the index stays current and gap reports stay honest even with no edits.
 #  - Writes ONLY index.json + AUDIT.md. Your index.html is untouched.
@@ -10,7 +10,7 @@ on:
   workflow_dispatch: {}
   push:
     paths:
-      - "iotc-index-catalog.xlsx"
+      - "data/**.csv"
       - "build_site.py"
       - ".github/workflows/build-index.yml"
   schedule:
@@ -31,7 +31,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install openpyxl
       - name: Build index + audit
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # enables uncatalogued-repo detection
